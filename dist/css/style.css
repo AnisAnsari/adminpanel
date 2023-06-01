@@ -3977,14 +3977,14 @@ hr.hr-center {
   display: block;
   padding: 0;
   position: relative;
-  line-height: 48px;
+  line-height: 32px;
   color: #a5a5a5;
 }
 .sidebar > ul > li.nav-item > a i {
   display: inline-block;
   width: 65px;
   height: 50px;
-  line-height: 50px;
+  line-height: 33px;
   z-index: 3;
   position: relative;
   text-align: center;
@@ -3992,7 +3992,7 @@ hr.hr-center {
 }
 
  .side-menu-icon > svg {
-  vertical-align: middle;
+  /* vertical-align: middle; */
   display: inline-block;
   width: 25px;
   height: 30px;
@@ -4017,6 +4017,13 @@ hr.hr-center {
   margin-left: 10px;
 }
 
+.fa-chevron-down {
+  font-size: 12px !important;
+  width: 15px !important;
+  height: 30px !important;
+  line-height: 100;
+}
+
 .sidebar > ul > li.nav-item > a i.down-arrow {
   color: #76838f;
   position: absolute;
@@ -4032,7 +4039,7 @@ hr.hr-center {
 }
 .sidebar > ul > li.nav-item > a .menu-title {
   position: relative;
-  top: 2px;
+  top: -23px;
 }
 .sidebar > ul > li.nav-item > a:not(.collapsed):not(.nav-single) {
   background: #eb1616;
