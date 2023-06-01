@@ -1,0 +1,325 @@
+
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Dashboard </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--  CSS -->
+    <link rel="stylesheet" href="libarary/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/feather-icon@0.1.0/css/feather.min.css">
+    <link rel="stylesheet" href="libarary/animate/animate.min.css"/>
+    <link rel="stylesheet" href="libarary/animsition/animsition.css"/>
+    <link rel="stylesheet" href="libarary/jqueryui/jqueryui.min.css">
+    <!-- <link rel="stylesheet" href="libarary/fontawesomr/all.css">     -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="dist/css/style.css">
+
+   <!-- Javascript Pre-loads -->
+    <script src="libarary/jquery-3.3.1/jquery.min.js"></script>
+
+</head>
+
+<body id="landing" class="sidebar-open">
+<div class="loading">
+    <div class="loading-center">
+        <img src="dist/images/loging-img.png" alt="Loading" />
+    </div>
+</div>
+<div class="page-container animsition">
+    <div id="dashboardPage">       
+
+<!-- Main Menu -->
+<div class="topbar">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-5 hidden-xs">
+                <div class="logo">
+                    <a href="/">
+                        <span class="logo-full">Dashboard</span>
+                    </a>
+                </div>
+                <a href="#" class="menu-toggle wave-effect">
+                    <!-- <i class="feather icon-menu "></i> -->
+                    <i class="fas fa-bars text-primary"></i>
+                </a>
+            </div>
+            <div class="col-md-7 text-right">
+                <ul>
+                    <!-- Profile Menu -->
+                    <li class="btn-group user-account">
+                        <a href="javascript:;" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="user-content">
+                                <div class="user-name">Naushad</div>
+                                <div class="user-plan">Super Admin</div>
+                            </div>
+                            <div class="avatar">
+                                <img src="dist/images/user.jpg" alt="profile" />
+                            </div>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a href="#" class="animsition-link dropdown-item wave-effect"><i class="feather icon-user"></i> Profile</a></li>
+                            <li><a href="login.html" class="animsition-link dropdown-item wave-effect"><i class="feather icon-log-in"></i> Logout</a></li>
+                        </ul>
+                    </li>
+                    <!-- Offcanvas Menu -->
+                    <!-- <li>
+                        <a href="#" class="btn wave-effect offcanvas-toggle"><i class="feather icon-settings"></i></a>
+                    </li> -->
+
+                    <!-- Notification Menu -->
+                    <li class="btn-group notification">
+                        <a href="javascript:;" class="btn dropdown-toggle wave-effect" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="">
+                    <i class="fas fa-bell"></i>
+                                <span class="notification-count">27</span>
+                            </i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li>
+                                <a href="#" class="wave-effect">
+                                    <span class="avatar">
+                                        <img src="dist/images/user.jpg" alt="Mr. Chu" />
+                                    </span>
+                                    <span class="name">Jas Gillionaire</span>
+                                    <span class="message">Like your post: “Contact Form 7 Multi-Step”</span>
+                                    <span class="time">45 min</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="wave-effect">
+                                    <span class="avatar">
+                                        <img src="dist/images/user.jpg" alt="Andrew" />
+                                    </span>
+                                    <span class="name">Gurinder Singh</span>
+                                    <span class="message">Like your post: “Contact Form 7 Multi-Step”</span>
+                                    <span class="time">45 min</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="wave-effect">
+                                    <span class="avatar">
+                                        <img src="dist/images/user.jpg" alt="Mr. Chu" />
+                                    </span>
+                                    <span class="name">Andrew the Canadian</span>
+                                    <span class="message">Like your post: “Contact Form 7 Multi-Step”</span>
+                                    <span class="time">45 min</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="wave-effect">
+                                    <span class="avatar">
+                                        <img src="dist/images/user.jpg" alt="Mr. Chu" />
+                                    </span>
+                                    <span class="name">Artsy Shohan</span>
+                                    <span class="message">Like your post: “Contact Form 7 Multi-Step”</span>
+                                    <span class="time">45 min</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="wave-effect">
+                                    <span class="avatar">
+                                        <img src="dist/images/user.jpg" alt="Mr. Chu" />
+                                    </span>
+                                    <span class="name">Sazzad Shammad</span>
+                                    <span class="message">Like your post: “Contact Form 7 Multi-Step”</span>
+                                    <span class="time">45 min</span>
+                                </a>
+                            </li>
+                            <li><a href="/notification" class="dropdown-item all-notifications wave-effect">See more messages <i class="feather icon-arrow-down"></i></a></li>
+                        </ul>
+                    </li>
+                    <li class="mobile-menu-toggle">
+                        <a href="#" class="menu-toggle wave-effect">
+                            <i class="feather icon-menu"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+
+<!-- Main Menu -->
+<div class="sidebar">
+    <div class="logo">
+        <a href="/">
+            <span class="logo-emblem"><img src="dist/images/logo.png" alt="logo" /></span>
+            <span class="logo-full">Dashboard</span>
+        </a>
+    </div>
+    <ul id="sidebarCookie">
+        <li class="spacer"></li>
+        <li class="nav-item">
+            <a class="nav-link side-menu-icon wave-effect collapsed wave-effect" data-parent="#sidebarCookie" data-toggle="collapse" href="#navDashboard" aria-expanded="false" aria-controls="page-dashboards">
+                <!-- <i class="feather icon-grid"></i> -->
+                <i class="fas fa-tachometer-alt-average "></i>
+                <span class="menu-title">Dashboard</span>
+                <i class="feather icon-chevron-down down-arrow"></i>
+            </a>
+            <div class="collapse" id="navDashboard">
+                <ul class="flex-column sub-menu">
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect side-sub-menu-icon" href="index.html">
+                            <i class="fas fa-layer-group"></i>
+                            <span class="menu-title">Dashboard 1</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect side-sub-menu-icon" href="dashboard.html">
+                            <i class="fas fa-layer-group"></i>
+                            <span class="menu-title">Dashboard 2</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-darkSidebar wave-effect side-sub-menu-icon" href="dashboard.html">
+                            <i class="fas fa-layer-group"></i>
+                            <span class="menu-title">Dashboard 3</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+       
+        <li class="nav-item">
+            <a class="nav-link wave-effect collapsed side-menu-icon" data-parent="#sidebarCookie" data-toggle="collapse" href="#navElements" aria-expanded="false" aria-controls="page-elements">
+                <i class="fab fa-elementor"></i>
+                <span class="menu-title">Elements</span>
+                <i class="feather icon-chevron-down down-arrow"></i>
+            </a>
+            <div class="collapse" id="navElements">
+                <ul class="flex-column sub-menu">
+                    
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect side-sub-menu-icon" href="javascript: void();">
+                            <!-- <i class="feather icon-image"></i> -->
+                            <i class="fas fa-images"></i>
+                            <span class="menu-title">Gallery</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link wave-effect side-sub-menu-icon" href="javascript: void();">
+                            <i class="fas fa-th-large"></i>
+                            <span class="menu-title">Grid</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+       
+      <li class="nav-item">
+            <a href="#" class="nav-link wave-effect nav-single side-menu-icon">
+                <!-- <i class="feather icon-calendar"></i> -->
+                <i class="fas fa-calendar-week"></i>
+                <span class="menu-title">Calendar</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+        <main>
+            <div class="page-breadcrumb">
+    <div class="row">
+        <div class="col-6">
+            <h4 class="page-title">Dashboard</h4>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+                </ol>
+            </nav>
+        </div>
+        <div class="col-6">
+            <div class="text-right">
+                <!-- <small>Users</small>
+                <h5 class="text-info">3,458</h5> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <!-- column -->
+        <div class="col-sm-12 col-lg-4">
+            <div class="card card-hover">
+                <div class="card-body">
+                    <div class="d-flex">
+                        <div class="mr-4">
+                            <small>Wallet Balance</small>
+                            <h4 class="mb-0">$3,567.53</h4>
+                        </div>
+                        <div class="chart ml-auto">
+                            asdfadf
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- column -->
+        <div class="col-sm-12 col-lg-4">
+            <div class="card card-hover bg-red">
+                <div class="card-body">
+                    <div class="d-flex">
+                        <div class="mr-4">
+                            <small>Wallet Balance</small>
+                            <h4 class="mb-0">$3,567.53</h4>
+                        </div>
+                        <div class="chart ml-auto">
+                            asdfadf
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- column -->
+        <div class="col-sm-12 col-lg-4">
+            <div class="card card-hover bg-green">
+                <div class="card-body">
+                    <div class="d-flex">
+                        <div class="mr-4">
+                            <small>Wallet Balance</small>
+                            <h4 class="mb-0">$3,567.53</h4>
+                        </div>
+                        <div class="chart ml-auto">
+                            asdfadf
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="card">
+                <div class="card-body">
+                    <p>Hello World</p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+        </main>
+    </div>
+
+</div>
+
+
+
+<!-- Le Javascript -->
+<script src="libarary/jqueryui/jquery-ui.min.js"></script>
+<script src="libarary/bootstrap/popper.min.js"></script>
+<script src="libarary/bootstrap/bootstrap.min.js"></script>
+<script src="libarary/fontawesome/all.js"></script>
+<script src="dist/js/custom.js"></script>
+<script src="dist/js/main.js"></script>
+</body>
+</html>
