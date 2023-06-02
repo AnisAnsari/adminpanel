@@ -1,0 +1,762 @@
+
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Dashboard </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--  CSS -->
+    <link rel="stylesheet" href="libarary/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/feather-icon@0.1.0/css/feather.min.css">
+    <link rel="stylesheet" href="libarary/animate/animate.min.css"/>
+    <link rel="stylesheet" href="libarary/animsition/animsition.css"/>
+    <link rel="stylesheet" href="libarary/jqueryui/jqueryui.min.css">
+    <!-- <link rel="stylesheet" href="libarary/fontawesomr/all.css">     -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="dist/css/style.css">
+
+   <!-- Javascript Pre-loads -->
+    <script src="libarary/jquery-3.3.1/jquery.min.js"></script>
+
+</head>
+
+<body id="landing" class="sidebar-open">
+<div class="loading">
+    <div class="loading-center">
+        <img src="dist/images/loging-img.png" alt="Loading" />
+    </div>
+</div>
+<div class="page-container animsition">
+    <div id="dashboardPage">       
+
+<!-- Main Menu -->
+<div class="topbar">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-5 hidden-xs">
+                <div class="logo">
+                    <a href="/">
+                        <span class="logo-full">Dashboard</span>
+                    </a>
+                </div>
+                <a href="#" class="menu-toggle wave-effect">
+                    <!-- <i class="feather icon-menu "></i> -->
+                    <i class="fas fa-bars text-primary"></i>
+                </a>
+            </div>
+            <div class="col-md-7 text-right">
+                <ul>
+                    <!-- Profile Menu -->
+                    <li class="btn-group user-account">
+                        <a href="javascript:;" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="user-content">
+                                <div class="user-name">Naushad</div>
+                                <div class="user-plan">Super Admin</div>
+                            </div>
+                            <div class="avatar">
+                                <img src="dist/images/user.jpg" alt="profile" />
+                            </div>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a href="#" class="animsition-link dropdown-item wave-effect"><i class="feather icon-user"></i> Profile</a></li>
+                            <li><a href="login.html" class="animsition-link dropdown-item wave-effect"><i class="feather icon-log-in"></i> Logout</a></li>
+                        </ul>
+                    </li>
+                    <!-- Offcanvas Menu -->
+                    <!-- <li>
+                        <a href="#" class="btn wave-effect offcanvas-toggle"><i class="feather icon-settings"></i></a>
+                    </li> -->
+
+                    <!-- Notification Menu -->
+                    <li class="btn-group notification">
+                        <a href="javascript:;" class="btn dropdown-toggle wave-effect" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="">
+                    <i class="fas fa-bell"></i>
+                                <span class="notification-count">27</span>
+                            </i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li>
+                                <a href="#" class="wave-effect">
+                                    <span class="avatar">
+                                        <img src="dist/images/user.jpg" alt="Mr. Chu" />
+                                    </span>
+                                    <span class="name">Jas Gillionaire</span>
+                                    <span class="message">Like your post: “Contact Form 7 Multi-Step”</span>
+                                    <span class="time">45 min</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="wave-effect">
+                                    <span class="avatar">
+                                        <img src="dist/images/user.jpg" alt="Andrew" />
+                                    </span>
+                                    <span class="name">Gurinder Singh</span>
+                                    <span class="message">Like your post: “Contact Form 7 Multi-Step”</span>
+                                    <span class="time">45 min</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="wave-effect">
+                                    <span class="avatar">
+                                        <img src="dist/images/user.jpg" alt="Mr. Chu" />
+                                    </span>
+                                    <span class="name">Andrew the Canadian</span>
+                                    <span class="message">Like your post: “Contact Form 7 Multi-Step”</span>
+                                    <span class="time">45 min</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="wave-effect">
+                                    <span class="avatar">
+                                        <img src="dist/images/user.jpg" alt="Mr. Chu" />
+                                    </span>
+                                    <span class="name">Artsy Shohan</span>
+                                    <span class="message">Like your post: “Contact Form 7 Multi-Step”</span>
+                                    <span class="time">45 min</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="wave-effect">
+                                    <span class="avatar">
+                                        <img src="dist/images/user.jpg" alt="Mr. Chu" />
+                                    </span>
+                                    <span class="name">Sazzad Shammad</span>
+                                    <span class="message">Like your post: “Contact Form 7 Multi-Step”</span>
+                                    <span class="time">45 min</span>
+                                </a>
+                            </li>
+                            <li><a href="/notification" class="dropdown-item all-notifications wave-effect">See more messages <i class="feather icon-arrow-down"></i></a></li>
+                        </ul>
+                    </li>
+                    <li class="mobile-menu-toggle">
+                        <a href="#" class="menu-toggle wave-effect">
+                            <i class="feather icon-menu"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+
+<!-- Main Menu -->
+<div class="sidebar">
+  <div class="logo">
+      <a href="/">
+          <span class="logo-emblem"><img src="dist/images/logo.png" alt="logo" /></span>
+          <span class="logo-full">Dashboard</span>
+      </a>
+  </div>
+  <ul id="sidebarCookie">
+      <li class="spacer"></li>
+      <li class="nav-item">
+          <a class="nav-link side-menu-icon wave-effect collapsed wave-effect active" data-parent="#sidebarCookie" data-toggle="collapse" href="#navDashboard" aria-expanded="false" aria-controls="page-dashboards">
+              <i class="fas fa-tachometer-alt-average "></i>
+              <span class="menu-title">Dashboard</span>
+              <i class="fas fa-chevron-down float-right h1"></i>
+          </a>
+          <div class="collapse" id="navDashboard">
+              <ul class="flex-column sub-menu">
+                  <li class="nav-item">
+                      <a class="nav-link wave-effect side-sub-menu-icon" href="index.html">
+                          <i class="fas fa-layer-group"></i>
+                          <span class="menu-title">Dashboard 1</span>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link wave-effect side-sub-menu-icon" href="dashboard.html">
+                          <i class="fas fa-layer-group"></i>
+                          <span class="menu-title">Dashboard 2</span>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link js-darkSidebar wave-effect side-sub-menu-icon" href="dashboard.html">
+                          <i class="fas fa-layer-group"></i>
+                          <span class="menu-title">Dashboard 3</span>
+                      </a>
+                  </li>
+              </ul>
+          </div>
+      </li>        
+     
+      <li class="nav-item">
+          <a class="nav-link wave-effect collapsed side-menu-icon" data-parent="#sidebarCookie" data-toggle="collapse" href="#navElements" aria-expanded="false" aria-controls="page-elements">
+              <i class="fab fa-elementor"></i>
+              <span class="menu-title">Elements</span>
+              <i class="fas fa-chevron-down float-right"></i>
+          </a>
+          <div class="collapse" id="navElements">
+              <ul class="flex-column sub-menu">
+                  <li class="nav-item">
+                      <a class="nav-link wave-effect side-sub-menu-icon" href="form.html">
+                          <i class="fas fa-align-right"></i>
+                          <span class="menu-title">Form</span>
+                      </a>
+                  </li>
+
+                  <li class="nav-item">
+                      <a class="nav-link wave-effect side-sub-menu-icon" href="element.html">
+                          <i class="fas fa-align-right"></i>
+                          <span class="menu-title">Elements</span>
+                      </a>
+                  </li>
+                  
+                  <li class="nav-item">
+                      <a class="nav-link wave-effect side-sub-menu-icon" href="layout.html">
+                          <i class="fas fa-th-large"></i>
+                          <span class="menu-title">Layout</span>
+                      </a>
+                  </li>
+              </ul>
+          </div>
+      </li>
+
+     
+    <li class="nav-item">
+          <a href="#" class="nav-link wave-effect nav-single side-menu-icon">
+              <!-- <i class="feather icon-calendar"></i> -->
+              <i class="fas fa-calendar-week"></i>
+              <span class="menu-title">Calendar</span>
+              <i class="fas fa-chevron-down float-right" style="visibility: hidden;"></i>
+          </a>
+      </li>
+
+      
+  </ul>
+</div>
+
+        <main>
+            <div class="page-breadcrumb">
+    <div class="row">
+        <div class="col-6">
+            <h4 class="page-title">Dashboard</h4>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+                </ol>
+            </nav>
+        </div>
+        <div class="col-6">
+            <div class="text-right">
+                <!-- <small>Users</small>
+                <h5 class="text-info">3,458</h5> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <!-- column -->
+        <div class="col-sm-12 col-lg-6">
+            <div class="card card-hover">
+                <div class="card-body">
+                  <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action">A simple default list group item</a>
+                  
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-primary">A simple primary list group item</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">A simple secondary list group item</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-success">A simple success list group item</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-danger">A simple danger list group item</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-warning">A simple warning list group item</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-info">A simple info list group item</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-light">A simple light list group item</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-dark">A simple dark list group item</a>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <!-- column -->
+        <div class="col-sm-12 col-lg-6">
+            <div class="card card-hover">
+                <div class="card-body">
+                  <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      A list item
+                      <span class="badge badge-primary badge-pill">14</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      A second list item
+                      <span class="badge badge-primary badge-pill">2</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      A third list item
+                      <span class="badge badge-primary badge-pill">1</span>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+        </div>
+        <!-- column -->
+    </div>
+
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                  <ul class="list-unstyled">
+                    <li class="media">
+                      <img src="dist/images/mac.png" class="mr-3 w-25" alt="...">
+                      <div class="media-body">
+                        <h5 class="mt-0 mb-1">List-based media object</h5>
+                        <p>All my girls vintage Chanel baby. So you can have your cake. Tonight, tonight, tonight, I'm walking on air. Slowly swallowing down my fear, yeah yeah. Growing fast into a bolt of lightning. So hot and heavy, 'Til dawn. That fairy tale ending with a knight in shining armor. Heavy is the head that wears the crown.</p>
+                      </div>
+                    </li>
+                    <li class="media my-4">
+                      <img src="dist/images/mac.png" class="mr-3 w-25" alt="...">
+                      <div class="media-body">
+                        <h5 class="mt-0 mb-1">List-based media object</h5>
+                        <p>Maybe a reason why all the doors are closed. Cause once you’re mine, once you’re mine. Be your teenage dream tonight. Heavy is the head that wears the crown. It's not even a holiday, nothing to celebrate. A perfect storm, perfect storm.</p>
+                      </div>
+                    </li>
+                    <li class="media">
+                      <img src="dist/images/mac.png" class="mr-3 w-25" alt="...">
+                      <div class="media-body">
+                        <h5 class="mt-0 mb-1">List-based media object</h5>
+                        <p>Are you brave enough to let me see your peacock? There’s no going back. This is the last time you say, after the last line you break. At the eh-end of it all.</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                  <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">
+  Vertically centered modal
+</button>
+
+<!-- Vertically Modal -->
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModal2Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModal2Label">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<button type="button" class="btn btn-primary mt-2" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Open modal for @mdo</button>
+<button type="button" class="btn btn-primary mt-2" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Open modal for @fat</button>
+<button type="button" class="btn btn-primary mt-2" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Open modal for @getbootstrap</button>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Recipient:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Message:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send message</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                  <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" data-content="Top popover">
+                    Popover on top
+                  </button>
+                  <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="right" data-content="Right popover">
+                    Popover on right
+                  </button>
+                  <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Bottom popover">
+                    Popover on bottom
+                  </button>
+                  <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="left" data-content="Left popover">
+                    Popover on left
+                  </button>
+
+                  <a tabindex="0" class="btn btn-lg btn-danger" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">Dismissible popover</a>
+                <br><br>
+
+                <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  Tooltip on top
+                </button>
+                <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Tooltip on right">
+                  Tooltip on right
+                </button>
+                <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+                  Tooltip on bottom
+                </button>
+                <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left" title="Tooltip on left">
+                  Tooltip on left
+                </button>
+                
+                  <br><br>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                
+               
+            </div>
+        </div>
+
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                  <div class="spinner-grow text-primary" role="status">
+                    <span class="sr-only">Loading...</span>
+                  </div>
+                  <div class="spinner-grow text-secondary" role="status">
+                    <span class="sr-only">Loading...</span>
+                  </div>
+                  <div class="spinner-grow text-success" role="status">
+                    <span class="sr-only">Loading...</span>
+                  </div>
+                  <div class="spinner-grow text-danger" role="status">
+                    <span class="sr-only">Loading...</span>
+                  </div>
+                  <div class="spinner-grow text-warning" role="status">
+                    <span class="sr-only">Loading...</span>
+                  </div>
+                  <div class="spinner-grow text-info" role="status">
+                    <span class="sr-only">Loading...</span>
+                  </div>
+                  <div class="spinner-grow text-light" role="status">
+                    <span class="sr-only">Loading...</span>
+                  </div>
+                  <div class="spinner-grow text-dark" role="status">
+                    <span class="sr-only">Loading...</span>
+                  </div>
+
+                  <br>
+
+                  <div class="spinner-border" style="width: 3rem; height: 3rem;" role="status">
+                    <span class="sr-only">Loading...</span>
+                  </div>
+                  <div class="spinner-grow" style="width: 3rem; height: 3rem;" role="status">
+                    <span class="sr-only">Loading...</span>
+                  </div>
+
+                  <br>
+
+                  <button class="btn btn-primary" type="button" disabled>
+                    <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+                    <span class="sr-only">Loading...</span>
+                  </button>
+                  <button class="btn btn-primary" type="button" disabled>
+                    <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+                    Loading...
+                  </button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                  <p class="text-primary">.text-primary</p>
+<p class="text-secondary">.text-secondary</p>
+<p class="text-success">.text-success</p>
+<p class="text-danger">.text-danger</p>
+<p class="text-warning">.text-warning</p>
+<p class="text-info">.text-info</p>
+<p class="text-light bg-dark">.text-light</p>
+<p class="text-dark">.text-dark</p>
+<p class="text-body">.text-body</p>
+<p class="text-muted">.text-muted</p>
+<p class="text-white bg-dark">.text-white</p>
+<p class="text-black-50">.text-black-50</p>
+<p class="text-white-50 bg-dark">.text-white-50</p>
+                </div>                
+            </div>
+        </div>
+
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                  <div class="p-3 mb-2 bg-primary text-white">.bg-primary</div>
+                  <div class="p-3 mb-2 bg-secondary text-white">.bg-secondary</div>
+                  <div class="p-3 mb-2 bg-success text-white">.bg-success</div>
+                  <div class="p-3 mb-2 bg-danger text-white">.bg-danger</div>
+                  <div class="p-3 mb-2 bg-warning text-dark">.bg-warning</div>
+                  <div class="p-3 mb-2 bg-info text-white">.bg-info</div>
+                  <div class="p-3 mb-2 bg-light text-dark">.bg-light</div>
+                  <div class="p-3 mb-2 bg-dark text-white">.bg-dark</div>
+                  <div class="p-3 mb-2 bg-white text-dark">.bg-white</div>
+                  <div class="p-3 mb-2 bg-transparent text-dark">.bg-transparent</div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+
+                  <div class="shadow-none p-3 mb-5 bg-light rounded">No shadow</div>
+                    <div class="shadow-sm p-3 mb-5 bg-white rounded">Small shadow</div>
+                    <div class="shadow p-3 mb-5 bg-white rounded">Regular shadow</div>
+                    <div class="shadow-lg p-3 mb-5 bg-white rounded">Larger shadow</div>
+                     </div>
+                
+            </div>
+        </div>
+
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                  <button type="button" class="btn btn-primary">Primary</button>
+                  <button type="button" class="btn btn-secondary">Secondary</button>
+                  <button type="button" class="btn btn-success">Success</button>
+                  <button type="button" class="btn btn-danger">Danger</button>
+                  <button type="button" class="btn btn-warning">Warning</button>
+                  <button type="button" class="btn btn-info">Info</button>
+                  <button type="button" class="btn btn-light">Light</button>
+                  <button type="button" class="btn btn-dark">Dark</button>
+                  
+                  <button type="button" class="btn btn-link">Link</button>
+
+                  <br><br>
+
+                  <button type="button" class="btn btn-outline-primary">Primary</button>
+                  <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                  <button type="button" class="btn btn-outline-success">Success</button>
+                  <button type="button" class="btn btn-outline-danger">Danger</button>
+                  <button type="button" class="btn btn-outline-warning">Warning</button>
+                  <button type="button" class="btn btn-outline-info">Info</button>
+                  <button type="button" class="btn btn-outline-light">Light</button>
+                  <button type="button" class="btn btn-outline-dark">Dark</button>
+
+                  <br>
+                  <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-primary active">
+                      <input type="radio" name="options" id="option1" checked> Active
+                    </label>
+                    <label class="btn btn-primary">
+                      <input type="radio" name="options" id="option2"> Radio
+                    </label>
+                    <label class="btn btn-primary">
+                      <input type="radio" name="options" id="option3"> Radio
+                    </label>
+                  </div>
+
+                  <br><br>
+                  <!-- Example single danger button -->
+<div class="btn-group">
+  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+    Action
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="#">Separated link</a>
+  </div>
+</div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-6">
+          <div class="card">
+              <div class="card-body">
+                <p>
+                  <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    Link with href
+                  </a>
+                  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    Button with data-target
+                  </button>
+                </p>
+                <div class="collapse" id="collapseExample">
+                  <div class="card card-body">
+                    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                  </div>
+                </div>
+                   </div>
+
+                   <br><br>
+
+                   
+              
+          </div>
+      </div>
+
+      <div class="col-sm-6">
+          <div class="card">
+              <div class="card-body">
+                <div class="accordion" id="accordionExample">
+                  <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Collapsible Group Item #1
+                        </button>
+                      </h2>
+                    </div>
+                
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                      <div class="card-body">
+                        Some placeholder content for the first accordion panel. This panel is shown by default, thanks to the <code>.show</code> class.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingTwo">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Collapsible Group Item #2
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                      <div class="card-body">
+                        Some placeholder content for the second accordion panel. This panel is hidden by default.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingThree">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Collapsible Group Item #3
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                      <div class="card-body">
+                        And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by default.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+          </div>
+      </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-6">
+        <div class="card">
+            <div class="card-body">
+                 </div>
+            
+        </div>
+    </div>
+
+    <div class="col-sm-6">
+        <div class="card">
+            <div class="card-body">
+                
+            </div>
+            
+        </div>
+    </div>
+</div>
+</div>
+
+        </main>
+    </div>
+
+</div>
+
+
+
+<!-- Le Javascript -->
+<script src="libarary/jqueryui/jquery-ui.min.js"></script>
+<script src="libarary/bootstrap/popper.min.js"></script>
+<script src="libarary/bootstrap/bootstrap.min.js"></script>
+<script src="libarary/fontawesome/all.js"></script>
+<script src="dist/js/custom.js"></script>
+<script src="dist/js/main.js"></script>
+</body>
+</html>
